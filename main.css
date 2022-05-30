@@ -188,7 +188,7 @@ textarea {
   }
 
   .small-card{
-    margin: 10px;
+    margin: 30px;
     padding: 5px;
     border-radius: 10px;
     width: 200px;
@@ -204,13 +204,36 @@ textarea {
     margin: 20px;
   }
 
-  .tier-cards {
+  .tier-card {
     padding: 10px;
     border-radius: 10px;
   }
 
-  .tier-cards > * {
+  .tier-card > * {
     text-align: center;
+  }
+
+  .tier-heading {
+    margin-top: 20px;
+  }
+  
+  .tier-price {
+    margin: 0px;
+    font-size:xx-large;
+  }
+
+  .currency {
+    font-size: small;
+    margin-top: -10px;
+  }
+
+  .tier-price + p {
+    margin-bottom: 20px;
+  }
+
+  .tier-deets > li {
+    margin: 10px;
+    font-weight: lighter;
   }
 
   #tier1card {
