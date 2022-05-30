@@ -166,6 +166,7 @@ textarea {
   button{
     background-color: var(--pricol1);
     padding: 10px;
+    cursor: pointer;
   }
 
   #h1-sub {
@@ -248,7 +249,7 @@ textarea {
     background-color: lightcyan;
   }
 
-  #faqs>h2, #faqs>p, #faqs>div {
+  #faqs>h2, #faqs>p, #faqs>a {
     text-align: center;
     margin: 10px;
   }
