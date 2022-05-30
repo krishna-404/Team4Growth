@@ -204,6 +204,27 @@ textarea {
     margin: 20px;
   }
 
+  .tier-cards {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .tier-cards > * {
+    text-align: center;
+  }
+
+  #tier1card {
+    background-color: beige;
+  }
+
+  #tier2card {
+    background-color: bisque;
+  }
+
+  #tier3card {
+    background-color: lightcyan;
+  }
+
   #faqs>h2, #faqs>p, #faqs>div {
     text-align: center;
     margin: 10px;
@@ -312,6 +333,10 @@ textarea {
   #usp > .section-deets {
     display: flex;
     margin-top: 50px;
+  }
+
+  #plans > ul {
+    display: flex;
   }
 }
 
