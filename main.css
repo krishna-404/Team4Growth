@@ -34,7 +34,12 @@
 
 html {
   color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -150,6 +155,19 @@ textarea {
     font-size: 2.1em;
   }
 
+  ul {
+    list-style: none;  
+  }
+
+  li {
+    margin: 20px;
+  }
+
+  button{
+    background-color: var(--pricol1);
+    padding: 10px;
+  }
+
   #h1-sub {
     font-weight: normal;
     font-size: 0.8em;
@@ -163,11 +181,6 @@ textarea {
     font-size: 0.8em;
     text-align: justify;
     max-width: 80%;
-  }
-
-  button{
-    background-color: var(--pricol1);
-    padding: 10px;
   }
 
   #usp {
@@ -187,21 +200,22 @@ textarea {
     justify-content: center;
   }
 
-  .step-div {
-    margin: 20px;
-  }
-
   .testimonial-div {
     margin: 20px;
   }
 
-  ul {
-    list-style: none;  
-  }
-
-  li {
+  #faqs>h2, #faqs>p, #faqs>div {
+    text-align: center;
     margin: 10px;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -289,8 +303,16 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 821px) {
   /* Style adjustments for viewports that meet the condition */
+  body {
+    max-width: 80%;
+  }
+
+  #usp > .section-deets {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 @media print,
