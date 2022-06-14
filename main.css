@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif, sans-serif;
+  font-family: "Inter", serif;
   line-height: 1.6em;
   word-break: break-word; /* to stop overflow due to long words */
 }
@@ -108,6 +108,8 @@ textarea {
    ========================================================================== */
   body {
     padding-top: 50px;  
+    background-color: #FFFFFF;
+    color:#424242
   }
 
   a, a:visited {
@@ -126,6 +128,8 @@ textarea {
     left: 0;
     width: 100vw;
     background-color: white;
+    box-shadow:  2px 1px 2px #eee;;
+    padding: 0px 20px;
   }
 
   nav > a {
@@ -136,17 +140,27 @@ textarea {
   #nav-logo-div {
     height: 40px;
     width: 40px;
+    padding-left: 5px;
   }
 
   #nav-logo-div > img {
     height: 100%;
     width: 100%;
   }
-
+  .logoText{
+    font-weight: normal;
+      font-size: 1.3em;
+      line-height: 1.3em;
+  }
   nav > a > p {
     padding: 5px;
   }
-
+  #nav-links>li{
+    color:#424242
+  }
+  #nav-links>li:hover{
+    color:#209CEE
+  }
   #nav-links {
     display: none;
   }
@@ -167,6 +181,7 @@ textarea {
 
   h1{
     font-size: 2.1em;
+    color:#424242;
   }
 
   ul {
@@ -178,18 +193,34 @@ textarea {
   }
 
   button{
-    background-color: var(--pricol1);
-    padding: 10px;
-    cursor: pointer;
+    background-color: #387ed1;
+    color: #fff;
+    border: 1px solid transparent !important;
+    border-radius: 3px;
+    padding: 15px;
   }
-
-  #h1-sub {
+  .svgContainer{
+    display: none;
+     
+    
+  }
+  .mainTitle{
+    border-bottom: 1px solid #457b9d;
     font-weight: normal;
+    font-size: 1.0em;
+  }
+  #h1-sub {
+    font-weight: lighter;
     font-size: 0.8em;
     line-height: 1.3em;
+    margin-top: 5%;
   }
-
-  #first-fold > h2 {
+  .h2-sub{
+    font-size: 1rem;
+    line-height: 1.8;
+    line-break: auto;
+  }
+  #first-fold >div> h2 {
     padding-top: 1em;
     padding-bottom: 1em;
     font-weight: normal;
@@ -201,27 +232,132 @@ textarea {
   #usp {
     align-items: center;
   }
+.section-title{
+  font-size: 1rem;
+    line-height: 1.8;
+    line-break: auto;
+}
+.secondTitle{
+  font-size: 1.4em;
+  font-weight: normal;
+  border-bottom: 1px solid #e63946;
 
+}
+.secondDescription{
+  font-weight: lighter;
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
+#cta-firstfold{
+  margin-top: 5%;
+}
   .small-card{
     margin: 30px;
     padding: 5px;
     border-radius: 10px;
-    width: 200px;
     min-height: 200px;
-    box-shadow: -10px 10px #888888;
-    background-color: beige;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  .small-card>img{
+    width:72px;
+    height:72px;
+    box-shadow: rgb(218 225 233 / 56%) 0px 8px 16px;
+    align-items: center;
+    justify-content: center;
+  }
   .testimonial-div {
     margin: 20px;
   }
+.thirdTitle{
+  font-size: 1.4em;
+  font-weight: normal;
+  border-bottom: 1px solid #a8dadc;
 
+}
+.fourthTitle{
+  font-size: 1.4em;
+  font-weight: normal;
+  border-bottom: 1px solid #e9c46a;
+
+}
+.fifthTitle{
+  font-size: 1.2em;
+  font-weight: normal;
+
+}
+.fifthTitle>img{
+  float: left;
+  width:35px;
+  margin: 3% 3% 0 0 ;
+}
+.sixthTitle{
+  font-size: 1.4em;
+  font-weight: normal;
+  border-bottom: 1px solid #52b788;
+
+}
+.seventhTitle{
+  font-size: 1.4em;
+  font-weight: normal;
+  border-bottom: 1px solid #5f0f40;
+
+}
+.eightTitle{
+  font-size: 1.4em;
+  font-weight: normal;
+
+}
+.discription{
+  font-weight: lighter;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin:5px;
+}
+#steps{
+  font-size: 1rem;
+    line-height: 1.8;
+    line-break: auto;
+}
+.step-number{
+  font-weight: lighter;
+    font-size: 1.0em;
+    line-height: 1.3em;
+    
+}
+.step-div>img{
+  float: left;
+  width:35px;
+  margin-right:3%;
+}
+.stepTitle{
+  font-size: 1.3em;
+  font-weight: normal
+  ;
+margin-bottom: 5%;
+
+}
+.testimonial-div{
+  background: white;
+  border: #424242 1px solid;    
+  padding:1em;
+  border-radius: 5px;
+    color: black;
+}
+.author{
+  border-bottom: 1px solid #ff006e;
+  margin:5px;
+}
   .tier-card {
-    padding: 10px;
-    border-radius: 10px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0);
+    flex: 1;
+    margin: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
   }
 
   .tier-card > * {
@@ -230,16 +366,27 @@ textarea {
 
   .tier-heading {
     margin-top: 20px;
+    font-size: 2.0em;
+  font-weight: normal;
+  color:#209CEE
+
+  }
+  .tier-card>p{
+    font-size: 1.5em;
+  font-weight: normal;
+  
   }
   
   .tier-price {
     margin: 0px;
     font-size:xx-large;
+  font-weight: normal;
+
   }
 
   .currency {
-    font-size: small;
-    margin-top: -10px;
+    font-size: 0.8em;
+    margin: 5% 0 0 3%;;
   }
 
   .tier-price + p {
@@ -247,20 +394,24 @@ textarea {
   }
 
   .tier-deets > li {
-    margin: 10px;
-    font-weight: lighter;
+    color: #424242;
+    font-size: 1.0em;
+    font-weight: normal;
+    margin: 0 0 15px;
+    margin-bottom: 15px;
+    
   }
 
   #tier1card {
-    background-color: beige;
+    background-color: whitesmoke;
   }
 
   #tier2card {
-    background-color: bisque;
+    background-color: whitesmoke;
   }
 
   #tier3card {
-    background-color: lightcyan;
+    background-color: whitesmoke;
   }
 
   #faqs>h2, #faqs>p, #faqs>div {
@@ -268,14 +419,28 @@ textarea {
     margin: 10px;
     margin: auto;
   }
-
+.faq>li>h3{
+  font-size: 1.2em;
+  font-weight: 450;
+}
+.faq>li>p{
+  font-weight: lighter;
+  font-size: 1.0em;
+  line-height: 1.3em;
+  margin:5px;
+}
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
+.copyright{
+  font-weight: lighter;
+  font-size: 1.0em;
+  line-height: 1.3em;
+  margin:5px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -372,7 +537,21 @@ textarea {
   #nav-links {
     display: flex;
   }
-
+  #first-fold{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .mainContent{
+    margin-top: 10%;
+  }
+    .svgContainer{
+      display: block;
+      width: auto;
+    }
+     
+    
+  
   #usp > .section-deets {
     display: flex;
     margin-top: 50px;
@@ -464,4 +643,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
